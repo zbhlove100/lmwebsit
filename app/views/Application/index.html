@@ -1,8 +1,9 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 <style>
- .carousel {
+ 	.carousel {
       margin-bottom: 60px;
+      margin-top: 40px;
     }
 
     .carousel .container {
@@ -62,6 +63,7 @@
 	  background-image: -o-linear-gradient(top, #D8FF00, #FFE100);
 	  background-image: linear-gradient(to bottom, #D8FF00, #FFE100);
   }
+  
 </style>
         <div class="navbar navbar-fixed-top">
           <div class="navbar-inner">
@@ -72,31 +74,20 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            <a class="brand" href="/">乐盟</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="#">新闻</a></li>
+                <li><a href="#about">少儿</a></li>
+                <li><a href="#about">进阶</a></li>
+                <li><a href="@{'/public/html/teacher/list.html'}">师资</a></li>
+                <li><a href="#about">课程</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
-
-      </div> <!-- /.container -->
 
 	<div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
@@ -134,23 +125,168 @@
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
-<div class="container" style="height: 1200px">
-	<div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
-<div class="span12">
-    Fluid 12
-    <div class="row-fluid">
-      <div class="span6">
-        Fluid 6
-        <div class="row-fluid">
-          <div class="span6">Fluid 6</div>
-          <div class="span6">Fluid 6</div>
-        </div>
-      </div>
-      <div class="span6">Fluid 6</div>
-    </div>
-  </div>
+<div class="container" style="">
+	 <div class="row page-divider">
+	 	<h3>我们有最专业的教师团队：</h3>
+	 </div>
+	 <div class="row">
+		  <div class="span4">
+		  	  <img alt="" data-src="holder.js/350x350" class="img-rounded index-teacher" >
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+		  </div>
+		  <div class="span4">
+		      <img alt="" data-src="holder.js/350x350" class="img-rounded index-teacher" >
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+		  </div>
+		  <div class="span4">
+		      <img alt="" data-src="holder.js/350x350" class="img-rounded index-teacher" >
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+		  </div>
+	   </div>
+      <div class="row page-divider">
+      	<h3>我们有最舒适的教学环境</h3>
+	  </div>
+      <div class="row">
+		  <div class="span8">
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+		  </div>
+		  <div class="span4">
+		      <img alt="" src="@{'/public/images/teacher/3.png'}" class="img-rounded index-showpic">
+		  </div>
+		</div>
+	  <div class="row page-divider">
+	  		<h3>我们有最快的发展速度</h3>
+	  </div>
+	  <div class="row">
+		  <div class="span4">
+		  	  <img src="@{'/public/images/raise.jpg'}" class="index-showpic">
+		  </div>
+		  <div class="span8">
+	          <p>We're are a positive group.During the last year,the account of student has riase to 500.And now we have maths,chinese and etc beyong english. </p>
+		  </div>
+		</div>
+	  <div class="row page-divider">
+	  	<h3>我们有最棒的学员</h3>
+	  </div>
+      <div class="row">
+		  <div class="span9">
+		  	  <ul class="thumbnails">
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				  <li>
+				    <a href="#" class="thumbnail">
+				      <img data-src="holder.js/80x50" alt="">
+				    </a>
+				  </li>
+				</ul>
+		  </div>
+		  <div class="span3">
+		      <h3>还在等什么？</h3>
+	          <p>展示的只是我们优秀学员中的一小部分，目前已经有<span class="label label-important">${studentnum?:10000}</span>位学员在这里学习，马上成为下一位吧！！ </p>
+	          <p><a class="btn btn-success" href="#">立即报名 &raquo;</a></p>
+		  </div>
+	   </div>
+	  
  </div>

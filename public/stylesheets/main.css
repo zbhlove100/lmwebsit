@@ -1,0 +1,23 @@
+
+.page-divider{
+  	 background: url("../images/hr_140.png") no-repeat left;
+  	 height: 76px;
+  	 text-align: center;
+  }
+.footer{
+	margin: 50px 0 0;
+	background: #343434;
+	color: #fff;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.index-teacher{
+	height: 350px;
+	width: 350px;
+}
+.index-showpic{
+	height: 200px;
+	width: 350px;
+}
