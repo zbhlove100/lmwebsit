@@ -1,3 +1,5 @@
+#{extends 'main.html' /}
+#{set title:'Teacher' /}
 <div class="navbar navbar-fixed-top">
    <div class="navbar-inner">
    <div class="container">
@@ -7,14 +9,14 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
-     <a class="brand" href="#">乐盟</a>
+     <a class="brand" href="/">乐盟</a>
      <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
      <div class="nav-collapse collapse">
        <ul class="nav">
-         <li class="active"><a href="#">新闻</a></li>
+         <li><a href="#">新闻</a></li>
          <li><a href="#about">少儿</a></li>
          <li><a href="#about">进阶</a></li>
-         <li><a href="#about">师资</a></li>
+         <li class="active"><a href="#about">师资</a></li>
          <li><a href="#about">课程</a></li>
          <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
        </ul>
@@ -23,5 +25,5 @@
  </div><!-- /.navbar -->
  
  <div class="container" style="">
- 
+ 	
  </div>

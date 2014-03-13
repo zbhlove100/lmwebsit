@@ -13,7 +13,7 @@ public class Application extends Controller {
 
     public static void index() {
         Template template = TemplateLoader.load("app/views/Application/index.html");
-        System.out.println(template.render());
+        //System.out.println(template.render());
         render();
     }
 
